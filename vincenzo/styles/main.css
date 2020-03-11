@@ -1,0 +1,73 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #cccc99;
+}
+
+.container {
+  width: 90%;
+  height: auto;
+  background: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 4px solid #666;
+  display: flex;
+}
+
+.heading {
+  width: fit-content;
+  text-align: center;
+  position: relative;
+}
+
+.profile-pic {
+  width: 250px;
+  transition: 0.4s ease;
+  border: 4px solid #666;
+}
+
+.tooltip {
+  color: #fff;
+  background: #777;
+  width: 200px;
+  line-height: 35px;
+  border-radius: 10px;
+  top: 120px;
+  left: 200px;
+  height: 40px;
+  position: absolute;
+  border: 2px solid #444;
+  transition: all 0.4s ease;
+  visibility: hidden;
+}
+
+img:hover~.tooltip {
+  visibility: visible;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 3px 3px 6px;
+  height: 100%;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.about-me ul li {
+
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.about-me p {
+  text-align: justify;
+  padding: 10px;
+}
